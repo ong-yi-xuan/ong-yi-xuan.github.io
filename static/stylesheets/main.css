@@ -1,0 +1,221 @@
+body, footer {
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+.topnav, footer {
+    overflow: hidden;
+    background-color: #C88D57;
+    color: white;
+    width: 100%;
+}
+
+.topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topnav a:hover {
+    background-color: #EDE8EC;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: white;
+    color: #C88D57;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.footerText {
+    display: inline-block;
+}
+
+.textRight{
+    margin-right: 5%;
+}
+
+/* when screen is >= 600px, list navbar items side by sode */
+@media screen and (min-width: 600px) {
+    ul {
+        float: right;
+    }
+
+    li {
+        float: left;
+    }
+}
+  
+/* open/close links when user clicks hamburger icon */
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    
+    .topnav a.icon {
+        float: right;
+        display: block;
+        background-color: #C88D57;
+        color: white;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    /* icon remains at top right */
+    .topnav.responsive a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #EDE8EC;
+        color: black;
+    } 
+
+    /* individual links */
+    .topnav.responsive a {
+        display: flex;   
+        text-align: center;
+    }
+
+}
+
+/* styling text */
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    padding-bottom: 3%;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+/* for desktop devices */
+@media screen and (min-width: 600px){
+    h1 {
+        font-size: 3.6vw;
+    }
+
+    h2 {
+        font-size: 2.8vw;
+    }
+    
+    h3 {
+        font-size: 1.8vw;
+    }
+
+    p {
+        font-size: 1.3vw;
+    }
+
+    .bigButton {
+        font-size: 1.3vw;
+        padding: 5% 20%;
+    }
+
+    .smallButton {
+        font-size: 1.3vw;
+        padding: 2% 5%;
+    }
+}
+
+/* for mobile devices */
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    .button {
+        padding: 4% 10%;
+    }
+
+    .w3-cell {
+        padding: 2%;
+    }
+
+    .title {
+        margin-top: 10%;
+    }
+
+    .extraBottomSpace::after {
+        padding-bottom: 10%;
+    }
+}
+
+/* adjusting width of divs for mobile and desktop devices */
+@media screen and (min-width: 600px) {
+	.half {
+		width: 50%;
+	}
+
+    .third {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	.half, .third {
+		display: block;
+		width: 100%;
+	}
+}
+
+/* styling backgrounds */
+.pinkWrapper {
+    overflow: auto;
+    background-color: #EDD7CC;
+}
+
+.whiteWrapper {
+    background-color: white;
+    color:#C88D57;
+}
+
+.extraPadding {
+    padding: 5%;
+}
+
+.midPadding {
+    padding: 1.75%;
+}
+
+
+/* styling buttons */
+.button {
+    border: 1px solid #C88D57;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #C88D57;
+}
+
+.button:hover {
+    background-color: #C88D57;
+    color: white;
+}
+
