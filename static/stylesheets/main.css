@@ -243,3 +243,13 @@ p {
     text-align: center;
     display: inline-block;
 }
+
+#goalIcon {
+    font-size: 2em;
+    margin-right: 2%;
+}
+
+span {
+    display: block;
+    text-align: left;
+}
