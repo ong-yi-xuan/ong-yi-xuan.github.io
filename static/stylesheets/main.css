@@ -92,7 +92,6 @@ li {
         display: flex;   
         text-align: center;
     }
-
 }
 
 /* styling text */
@@ -154,36 +153,6 @@ p {
     .button {
         padding: 4% 10%;
     }
-
-    .w3-cell {
-        padding: 2%;
-    }
-
-    .title {
-        margin-top: 10%;
-    }
-
-    .extraBottomSpace::after {
-        padding-bottom: 10%;
-    }
-}
-
-/* adjusting width of divs for mobile and desktop devices */
-@media screen and (min-width: 600px) {
-	.half {
-		width: 50%;
-	}
-
-    .third {
-        width: 33%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-	.half, .third {
-		display: block;
-		width: 100%;
-	}
 }
 
 /* styling backgrounds */
@@ -219,3 +188,58 @@ p {
     color: white;
 }
 
+/* what i do section */
+.sectionTitle h2:before {
+    position: absolute;
+    width: 8%;
+    height: 2px;
+    content: "";
+    background-color: #C88D57;
+}
+
+/* desktop devices */
+@media screen and (min-width: 600px){
+    .sectionTitle {
+        padding: 1.5%;
+        text-align: left;
+        margin-left: 5%;
+    }
+    
+    #cardIcon {
+        padding-top: 10%;
+        font-size: 3em;
+    }
+}
+
+/* mobile devices */
+@media screen and (max-width: 600px){
+    /* adds a brown line above section title text */
+    .sectionTitle h2:before {
+        position: absolute;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        width: 8%;
+        height: 2px;
+        content: "";
+        background-color: #C88D57;
+    }
+
+    #cardIcon {
+        padding-top: 5%;
+        font-size: 2em;
+    }
+}
+
+.activityCell {
+    text-align: center;
+    padding: 5% 20%;
+    border-radius: 25px;
+    color:black;
+}
+
+.cardText {
+    text-align: center;
+    display: inline-block;
+}
