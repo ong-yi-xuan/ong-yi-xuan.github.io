@@ -8,7 +8,10 @@ function openImage(image){
     // Disable scroll
     document.body.style.overflow = "hidden";
     document.body.style.height = "100%";
-    document.body.style.paddingRight = "10px";
+
+    if (screen.width >= 600) {
+        document.body.style.paddingRight = "10px";
+    }
 }
 
 function enableSroll(){
