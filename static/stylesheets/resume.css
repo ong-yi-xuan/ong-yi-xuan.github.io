@@ -212,9 +212,17 @@ button.close {
 	margin: 0;
 }
 
+.download {
+	background-color: #EDD7CC;
+}
+
 /* adjust font size for cards in mobile */
 @media screen and (max-width: 600px) {
 	.card {
 		font-size: 1em;
+	}
+
+	.download .half {
+		width: 65%;
 	}
 }
