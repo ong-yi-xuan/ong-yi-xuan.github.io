@@ -124,8 +124,8 @@ h3.timelineTitle {
 	float: right;
 }
 
-/* if in mobile view, make the dual columns appear as 1 long column */
 @media screen and (max-width: 600px) {
+	/* if in mobile view, make the dual columns appear as 1 long column */
 	.half {
 		width: 100%;
 	}
@@ -152,4 +152,51 @@ h3.timelineTitle {
     position: absolute;
     top: 8%;
     left: -0.4%;
+}
+
+.card {
+	flex-direction: row;
+}
+
+.card img {
+	width: 20%;
+}
+
+.cardPadding {
+	padding: 0 5%;
+	margin-bottom: 3%;
+}
+
+
+/* animate tags */
+.tag {
+	transition: margin 0.2s ease-in-out;
+}
+
+.tag:hover {
+	margin-top: -1%;
+	cursor: pointer;
+	background-color: #EDE8EC;
+}
+
+/* modal for displaying certs */
+.modal-backdrop {
+	background-color: transparent;
+}
+
+button.close {
+    width: 30px;
+    font-size: 20px;
+    color: #9f684c;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+	float: right;
+	display: block;
+}
+
+.modal-image {
+	width: 80%;
+	margin: auto;
 }
