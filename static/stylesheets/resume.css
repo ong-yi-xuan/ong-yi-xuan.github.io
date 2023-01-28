@@ -28,7 +28,7 @@
 .column {
 	width: 100%;
 	padding: 5%;
-	overflow-y: auto;
+	overflow: auto;
 }
 
 .timeline {
@@ -109,6 +109,11 @@
 	float:left;
 }
 
+.floatRight {
+	float: right;
+}
+
+/* if in mobile view, make the dual columns appear as 1 long column */
 @media screen and (max-width: 600px) {
 	.half {
 		width: 100%;
