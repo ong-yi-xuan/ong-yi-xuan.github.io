@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700,800,900'>
+
+        <!-- favicons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+        <!-- css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="static/stylesheets/main.css" />
+        <link type="text/css" rel="stylesheet" href="static/stylesheets/resume.css" />
+
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- js -->
+        <script src="js/main.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- top nav -->
+            <nav class="topnav" id="topnavBar">
+                <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li> <a href="resume.html" class="active">Resume</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li><a class="icon" onclick="myFunction()">
+                    <i id="responsiveIcon" class="fa fa-bars"></i>
+                </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- title section -->
+        <div class="resumeTitle">
+            <h3 class="timelineTitle">Resume</h3>
+        </div>
+
+        <!-- education and experience section -->
+        <div class="">
+            <div class="pinkWrapper midPadding half floatLeft">
+                <div class="resumeTitle">
+                    <h3 class="timelineTitle">Education</h3>
+                </div>
+                <div class="timeline s-about__timeline-section">
+
+                    <!-- university -->
+                    <div class="column">
+                        <div class="timelineBullet"></div>
+                        <h4 class="timelineTitle">Singapore Institute of Technology</h4>
+                        <div class="timelineTagline">
+                            <h5 class="timelineSub">Bachelors of Engineering (Honours) in Information and Communications Technology (Software Engineering)</h5>
+                            <p class="timelineTimeframe">2021 - Present</p>
+                        </div>
+                    </div>
+
+                    <!-- polytechnic -->
+                    <div class="column">
+                        <div class="timelineBullet"></div>
+                        <h4 class="timelineTitle">Temasek Polytechnic</h4>
+                        <div class="timelineTagline">
+                            <h5 class="timelineSub">Diploma in Cybersecurity & Digital Forensics</h5>
+                            <p class="timelineTimeframe">2018 - 2021</p>
+                        </div>
+                        <ul>
+                            <li class="listItem">Vice President - TP Young Writers (AY2020/2021)</li>
+                            <li class="listItem">2x Class Secretary</li>
+                            <li class="listItem">Secretary - TP Young Writers (AY2019/2020)</li>
+                            <li class="listItem">Top 25% of diploma cohort in AY2018/2019</li>
+                        </ul>
+                    </div>
+
+                    <!-- secondary -->
+                    <div class="column">
+                        <div class="timelineBullet"></div>
+                        <h4 class="timelineTitle">St Anthony's Canossian Secondary School</h4>
+                        <div class="timelineTagline">
+                            <h5 class="timelineSub">GCE O Levels</h5>
+                            <p class="timelineTimeframe">2014 - 2017</p>
+                        </div>
+                        <ul>
+                            <li class="listItem">President - SACSS Media Resource Library</li>
+                            <li class="listItem">3x Top 10% of Cohort</li>
+                            <li class="listItem w3-margin-bottom">ICAS Distinction in English and Credit in Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- experience section -->
+            <div class="pinkWrapper midPadding half">
+                <div class="resumeTitle">
+                    <h3 class="timelineTitle">Experience</h3>
+                </div>
+                <div class="timeline s-about__timeline-section">
+                    <div class="column">
+                        <div class="timelineBullet"></div>
+                        <h4 class="timelineTitle">AiDA Technologies</h4>
+                        <div class="timelineTagline">
+                            <h5 class="timelineSub">Intern</h5>
+                            <p class="timelineTimeframe">Sept 2020 - Feb 2021</p>
+                        </div>
+                        <div class="timelineDesc">
+                            <ul>
+                                <li class="listItem">Experimented with using OpenGL to clean images for OCR processing</li>
+                                <li class="listItem">Created scripts to extract key data from OCRed documents in a foreign language</li>
+                                <li class="listItem w3-margin-bottom">Researched security improvements for operations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <footer>
+            <p class="footerText leftWrapper">Images from <a href="https://www.canva.com/">Canva</a></p>
+            <p class="footerText rightWrapper textRight">© Yi Xuan</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+* {
+	position: relative;
+}
+
+.resumeTitle {
+	padding: 2%;
+}
+
+/* section title */
+.resumeTitle h3:after {
+    position: absolute;
+    width: 8%;
+    height: 2px;
+    content: "";
+    background-color: black;
+	bottom: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 600px) {
+	.resumeTitle h3:after {
+		width: 10%;
+		bottom: 0;
+		left: 47%;
+	}
+}
+
+.column {
+	width: 100%;
+	padding: 5%;
+	overflow-y: auto;
+}
+
+.timeline {
+	width: 80%;
+	margin: auto;
+}
+
+.listItem {
+	font-size: 1em;
+	list-style-type: disc;
+	margin-left: 5%;
+	width: 100%;
+}
+
+.s-about__timeline-section::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: rgb(52, 1, 36);
+    position: absolute;
+}
+
+
+.timelineTimeframe {
+    text-transform : uppercase;
+    letter-spacing : .15em;
+	margin: 0;
+	padding: 0px 0px 1.5%;
+}
+
+@media screen and (min-width: 600px) {
+	.timelineTimeframe {
+		font-size: 1rem;
+	}
+}
+
+.w3-leftbar {
+	margin-left: -5%;
+}
+
+.resumeTitle {
+	padding-left: 5%;
+}
+
+.timelineTitle {
+	font-family: "Castoro", serif;
+	font-weight: 550;
+	font-size: 1.8em;
+}
+
+.leftCertCell {
+	width: 70%;
+	margin-left: 15%;
+}
+
+.smallImg {
+	max-width:98%;
+	float: left;
+	margin-right:1rem;
+	border-radius: 15px 0px 0px 15px;
+}
+
+.imgBg {
+	max-width: 100px;
+}
+
+.roundedBorder {
+	border: 1px solid black;
+	border-radius: 15px;
+}
+
+
+.half {
+	width: 50%;
+}
+
+.floatLeft {
+	float:left;
+}
+
+@media screen and (max-width: 600px) {
+	.half {
+		width: 100%;
+	}
+}
+
+.timelineBullet {
+	display: block;
+    height: 3.5rem;
+    width: 6px;
+    background-color: black;
+	border-radius: 25px;
+    position: absolute;
+    top: 8%;
+    left: -0.4%;
+}
