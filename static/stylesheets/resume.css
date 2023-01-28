@@ -18,10 +18,14 @@
 }
 
 @media screen and (max-width: 600px) {
+	.resumeTitle {
+		text-align: center;
+	}
+
 	.resumeTitle h3:after {
 		width: 10%;
 		bottom: 0;
-		left: 47%;
+		left: 45%;
 	}
 }
 
@@ -76,6 +80,13 @@
 .timelineTitle {
 	font-family: "Castoro", serif;
 	font-weight: 550;
+}
+
+h2.timelineTitle {
+	font-size: 2.2em;
+}
+
+h3.timelineTitle {
 	font-size: 1.8em;
 }
 
@@ -117,6 +128,18 @@
 @media screen and (max-width: 600px) {
 	.half {
 		width: 100%;
+	}
+
+	.resumeTitle h2 {
+		padding: 3%;
+	}
+
+	.resumeSection {
+		margin-left: 5%;
+	}
+
+	.column {
+		padding: 10%;
 	}
 }
 
